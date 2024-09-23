@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(72, 149, 239);
+}
+.divcontwave{
+ position: relative;
+ /* background-color: #b80751; */
+ background: linear-gradient(60deg, rgb(235, 30, 30, 0.9) 0%, rgb(217, 126, 22, 1) 80%);
+ width: 100%;
+ height: 30vh;
+}
+
+
+.wave_divcontwave{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 15vh;
+	background: url(../img/wave3.png);
+	background-size: 700px 100%;
+	background-repeat: repeat;
+	animation: wave 10s linear infinite;
+}
+
+.efectwavesimp1{
+	animation-delay: -1s;
+	animation-duration:7s;
+	opacity: 0.3;
+}
+.efectwavesimp2{
+	animation-delay: -2s;
+	animation-duration:7s;
+	opacity: 0.4;
+}
+.efectwavesimp3{
+	animation-delay: -3s;
+	animation-duration:9s;
+	opacity: 0.9;
+}
+
+@keyframes wave{
+	0%{
+		background-position-x: 0;
+	}
+	100%{
+        background-position-x: 1400px; /*multiplo de  background-size en X*/
+	}
+}
+
+/* ////////////////////////////////////// */
+
+.divwave{
+	width: 100%;
+	height: 40vh;
+	overflow: hidden;
+	/* animation: wave2 10s linear infinite;	 */
+}
+svg {
+	/*que ocupe la pantalla de extre a extremo*/
+	width: 200%;
+	height: 40vh;
+	position: relative;
+	/* object-fit: cover; */ /*Para asegurar*/
+  }
+
+  use{
+	
+	/* animation-delay: -3s; */
+	/* animation-duration: 2s; */
+	/* animation: waveMove 3s linear infinite; */
+  }
+
+  use:nth-child(1){
+}
+
+use:nth-child(2){
+	animation: waveMove 2s  cubic-bezier(.55,.5,.45,.5) infinite;
+	animation-delay: -1s;
+	animation-duration:5s;
+
+	/* animation: waveMove 2s  cubic-bezier(.55,.5,.45,.5) infinite; */
+}
+use:nth-child(3){
+	animation: waveMove 2s  cubic-bezier(.55,.5,.45,.5) infinite;
+	animation-delay: -2s;
+	animation-duration:6s;
+}
+use:nth-child(4){
+	animation: waveMove 2s  cubic-bezier(.55,.5,.45,.5) infinite;
+	animation-delay: -3s;
+	animation-duration:7s;
+}
+use:nth-child(5){
+	animation: waveMove 2s  cubic-bezier(.55,.5,.45,.5) infinite;
+	animation-delay: -4s;
+	animation-duration:8s;
+}
+use:nth-child(6){
+	animation: waveMove 2s  cubic-bezier(.55,.5,.45,.5) infinite;
+	animation-delay: -5s;
+	animation-duration:9s;
+}
+@keyframes waveMove {
+	0%{
+		transform: translate3d(-50%,0,0)
+	}
+	100%{
+		transform: translate3d(0,0,0)
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* ///////////// una tras otra///////// */
+/* @keyframes waveMove {
+	100%{
+		transform: translate3d(100%,0,0)
+	}
+}
+@keyframes waveMove2 {
+	100%{
+		transform: translate3d(0,0,0)
+	}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
